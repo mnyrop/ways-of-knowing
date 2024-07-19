@@ -1,8 +1,14 @@
-# ways of knowing
+# Ways of Knowing
 
-## local development 
+## Local Development 
 
-1. Install & use project version
+### Prerequisites 
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [NVM](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
+
+### Steps
+
+1. Install & use project node version
   ```sh
   nvm install
   ```
