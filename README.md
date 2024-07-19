@@ -1,4 +1,4 @@
-# making-and-knowing
+# ways of knowing
 
 ## local development 
 
