@@ -15,4 +15,4 @@ order: 2
 	{{ config.siteTitle }}
 </h2>
 
-{% include "navigation.njk" %}
+{% include navigation.html %}

@@ -20,4 +20,4 @@ order: 1
 	<p class="pt-3"><a href="https://github.com/jeremydaly/eleventy-tailwind-template#readme" class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">View the README</a></p>
 </div>
 
-{% include "navigation.njk" %}
+{% include navigation.html %}
