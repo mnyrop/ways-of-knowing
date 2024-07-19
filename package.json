@@ -4,8 +4,8 @@
   "description": "Template for using Eleventy and Tailwind CSS",
   "scripts": {
     "start": "npm-run-all -p dev:*",
-    "build": "npx @11ty/eleventy && tailwindcss -i src/css/styles.sass -o _site/css/styles.css",
-    "dev:11ty": "eleventy --serve --quiet",
+    "build": "env NODE_ENV=production npx @11ty/eleventy --pathprefix 'ways-of-knowing' && tailwindcss -i src/css/styles.sass -o _site/css/styles.css",
+    "dev:11ty": "eleventy --pathprefix 'ways-of-knowing' --serve --quiet",
     "dev:css": "tailwindcss -i src/css/styles.sass -o _site/css/styles.css --watch --postcss"
   },
   "repository": {

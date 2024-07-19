@@ -2,7 +2,7 @@
 	{%- for item in collections.pages -%}
 		{% if page.url != item.url %}
 		<li>
-			<a href="{{ item.url }}">{{ item.data.title }}</a>
+			<a href="{{ item.url | url }}">{{ item.data.title }}</a>
 		</li>
 		{% endif %}
 	{%- endfor -%}
