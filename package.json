@@ -1,29 +1,43 @@
 {
-  "name": "eleventy-tailwind-template",
-  "version": "1.0.0",
-  "description": "Template for using Eleventy and Tailwind CSS",
+  "name": "ways-of-knowing",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "start": "npm-run-all -p dev:*",
-    "build": "env NODE_ENV=production npx @11ty/eleventy --pathprefix 'ways-of-knowing' && tailwindcss -i src/css/styles.sass -o dist/css/styles.css",
-    "dev:11ty": "eleventy --pathprefix 'ways-of-knowing' --serve --quiet",
-    "dev:css": "tailwindcss -i src/css/styles.sass -o dist/css/styles.css --watch --postcss"
+    "build": "run-s build:*",
+    "test": "run-s test:*",
+    "dev:11ty": "eleventy --serve",
+    "dev:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --watch --postcss",
+    "build:11ty": "env NODE_ENV=production eleventy",
+    "build:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --postcss",
+    "test:build": "npm run build:css && eleventy",
+    "test:links": "hyperlink dist",
+    "test:a11y": "lhci autorun"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jeremydaly/eleventy-tailwind-template.git"
-  },
-  "author": "Jeremy Daly",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jeremydaly/eleventy-tailwind-template/issues"
-  },
-  "homepage": "https://github.com/jeremydaly/eleventy-tailwind-template#readme",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0-alpha.13",
+    "@11ty/eleventy": "3.0.0-alpha.17",
+    "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.19",
-    "dayjs": "^1.11.11",
+    "daisyui": "^4.5.0",
+    "markdown-it-anchor": "^9.0.1",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4"
+    "postcss": "^8.4.33",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.0"
+  },
+  "dependencies": {
+    "@axe-core/cli": "^4.9.0",
+    "@lhci/cli": "^0.14.0",
+    "@untitaker/hyperlink": "^0.1.32",
+    "clean-css": "^5.2.4",
+    "flickity": "^3.0.0",
+    "itemsjs": "^2.1.25",
+    "lunr": "^2.3.9",
+    "moment": "^2.29.1"
   }
 }
