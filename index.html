@@ -25,86 +25,163 @@
 <!-- Google tag (gtag.js) -->
 <!-- TO DO -->
 
-  <body class="font-sans">
-    <div class="flex flex-row flex-wrap md:flex-nowrap h-screen w-screen">
-      <nav class="p-6 md:p-12 basis-full md:basis-1/3 bg-linen md:h-screen md:mx-auto md:text-center">
-        <a href="/ways-of-knowing/">
-          <img class="md:mx-auto w-48 md:w-56 mb-6" src="/ways-of-knowing/assets/logo.png"/>
-        </a>
-        <h2 class="py-6 text-xl uppercase">Contents</h2>
-        <ul class="md:hidden flex md:justify-center flex-wrap w-full">
+  <body class="font-sans bg-white">
+    <div class="flex flex-row flex-wrap md:flex-nowrap min-h-screen w-screen text-matte-black">
+      <nav class="px-6 pb-6 md:px-12 md:pb-12 basis-full md:basis-1/3 bg-linen md:min-h-screen md:mx-auto md:text-center">
+  <a href="/ways-of-knowing/">
+    <img class="mx-auto w-4/5 md:w-56 md:mb-6 mt-6 md:mt-12 hover:opacity-80" src="/ways-of-knowing/assets/logo.png"/>
+  </a>
+  <div class="hidden md:inline-block">
+    <h2 class="pt-6 pb-2 text-lg uppercase tracking-wide">Oral Histories</h2>
+    <div>
+      
+      <div class="px-1 py-2 inline-block whitespace-nowrap">
+        <a href="/ways-of-knowing/contents/1" class="text-coyote hover:border-b-2 hover:border-coffee">Alissa Cherry</a>
+      </div>
+      <span>○</span>
+      
+      <div class="px-1 py-2 inline-block whitespace-nowrap">
+        <a href="/ways-of-knowing/contents/2" class="text-coyote hover:border-b-2 hover:border-coffee">Mary Ellen S. Capek</a>
+      </div>
+      <span>○</span>
+      
+      <div class="px-1 py-2 inline-block whitespace-nowrap">
+        <a href="/ways-of-knowing/contents/3" class="text-coyote hover:border-b-2 hover:border-coffee">Sarah M. Pritchard</a>
+      </div>
+      <span>○</span>
+      
+      <div class="px-1 py-2 inline-block whitespace-nowrap">
+        <a href="/ways-of-knowing/contents/4" class="text-coyote hover:border-b-2 hover:border-coffee">Richard Chabrán</a>
+      </div>
+      <span>○</span>
+      
+      <div class="px-1 py-2 inline-block whitespace-nowrap">
+        <a href="/ways-of-knowing/contents/5" class="text-coyote hover:border-b-2 hover:border-coffee">Lillian Castillo-Speed</a>
+      </div>
+      <span>○</span>
+      
+      <div class="px-1 py-2 inline-block whitespace-nowrap">
+        <a href="/ways-of-knowing/contents/6" class="text-coyote hover:border-b-2 hover:border-coffee">Adrian Williams</a>
+      </div>
+      <span>○</span>
+      
+      <div class="px-1 py-2 inline-block whitespace-nowrap">
+        <a href="/ways-of-knowing/contents/7" class="text-coyote hover:border-b-2 hover:border-coffee">K. J. Rawson</a>
+      </div>
+      
+      
+    </ul>
+  </div>
+</nav>
+      <main class="basis-full md:basis-2/3 min-h-screen md:h-screen w-full md:overflow-y-scroll bg-white">
+        <header class="bg-bone sticky mt-0 top-0 left-auto w-full md:px-0 py-4 z-10">
+  <div class="flex justify-between max-w-prose px-6 md:px-12">
+    <div>
+      
+      <span>Home</span>
+      
+      <span class="px-2">/</span>
+        <select id="ohSelector" class="select text-coffee bg-white select-sm">
           
-          <li class="my-1 mr-4 md:mx-2">
-            <a href="#" class="text-coyote hover:border-b-2 hover:border-coffee">Alissa Cherry</a>
-          </li>
+            <option disabled selected>Select Oral History</option>
           
-          <li class="my-1 mr-4 md:mx-2">
-            <a href="#" class="text-coyote hover:border-b-2 hover:border-coffee">Mary Ellen S. Capek</a>
-          </li>
           
-          <li class="my-1 mr-4 md:mx-2">
-            <a href="#" class="text-coyote hover:border-b-2 hover:border-coffee">Sarah M. Pritchard</a>
-          </li>
+            
+            <option value="1">Alissa Cherry</option>
+            
           
-          <li class="my-1 mr-4 md:mx-2">
-            <a href="#" class="text-coyote hover:border-b-2 hover:border-coffee">Richard Chabrán</a>
-          </li>
+            
+            <option value="2">Mary Ellen S. Capek</option>
+            
           
-          <li class="my-1 mr-4 md:mx-2">
-            <a href="#" class="text-coyote hover:border-b-2 hover:border-coffee">Lillian Castillo-Speed</a>
-          </li>
+            
+            <option value="3">Sarah M. Pritchard</option>
+            
           
-          <li class="my-1 mr-4 md:mx-2">
-            <a href="#" class="text-coyote hover:border-b-2 hover:border-coffee">Adrian Williams</a>
-          </li>
+            
+            <option value="4">Richard Chabrán</option>
+            
           
-          <li class="my-1 mr-4 md:mx-2">
-            <a href="#" class="text-coyote hover:border-b-2 hover:border-coffee">K. J. Rawson</a>
-          </li>
+            
+            <option value="5">Lillian Castillo-Speed</option>
+            
           
-        </ul>
-        <ul class="hidden md:inline-block">
+            
+            <option value="6">Adrian Williams</option>
+            
           
-          <li class="py-1">
-            <a href="/ways-of-knowing/contents/1" class="text-coyote hover:border-b-2 hover:border-coffee">Alissa Cherry</a>
-          </li>
+            
+            <option value="7">K. J. Rawson</option>
+            
           
-          <li class="py-1">
-            <a href="/ways-of-knowing/contents/2" class="text-coyote hover:border-b-2 hover:border-coffee">Mary Ellen S. Capek</a>
-          </li>
-          
-          <li class="py-1">
-            <a href="/ways-of-knowing/contents/3" class="text-coyote hover:border-b-2 hover:border-coffee">Sarah M. Pritchard</a>
-          </li>
-          
-          <li class="py-1">
-            <a href="/ways-of-knowing/contents/4" class="text-coyote hover:border-b-2 hover:border-coffee">Richard Chabrán</a>
-          </li>
-          
-          <li class="py-1">
-            <a href="/ways-of-knowing/contents/5" class="text-coyote hover:border-b-2 hover:border-coffee">Lillian Castillo-Speed</a>
-          </li>
-          
-          <li class="py-1">
-            <a href="/ways-of-knowing/contents/6" class="text-coyote hover:border-b-2 hover:border-coffee">Adrian Williams</a>
-          </li>
-          
-          <li class="py-1">
-            <a href="/ways-of-knowing/contents/7" class="text-coyote hover:border-b-2 hover:border-coffee">K. J. Rawson</a>
-          </li>
-          
-        </ul>
-      </nav>
-      <main class="p-6 md:p-12 basis-full md:basis-2/3 md:h-screen md:overflow-x-scroll bg-white">
-        <div class="max-w-prose">
-          <h1 class="max-w-xl text-3xl uppercase py-6">Oral Histories on the Worlds Words Create</h1>
-<p class="mb-6">
+        </select>      
+    </div>
+    <div class="md:hidden">
+      <div id="scrollToTopMobile" class="btn btn-sm bg-coffee border-none hidden text-white  hover:bg-linen hover:text-coffee">⇧</div>
+    </div>
+    <div class="hidden md:inline">
+      <div id="scrollToTopDesktop" class="btn btn-sm bg-coffee border-none hidden text-white hover:bg-linen hover:text-coffee cursor-pointer">Scroll to Top ⇧</div>
+    </div>
+  </div>
+</header>
+
+
+<script>
+  var btnScrollToTopDesktop = document.querySelector("#scrollToTopDesktop");
+  var btnScrollToTopMobile = document.querySelector("#scrollToTopMobile");
+  var main = document.querySelector("main");
+
+  btnScrollToTopDesktop.addEventListener("click", e => {
+    main.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  });
+  main.addEventListener('scroll', e => {
+    if (e.target.scrollTop > 200) {
+      btnScrollToTopDesktop.classList.remove('hidden');
+    } 
+    else {
+      btnScrollToTopDesktop.classList.add('hidden');
+    }
+  });
+
+  btnScrollToTopMobile.addEventListener("click", e => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  });
+  window.addEventListener('scroll', e => {
+    if (window.scrollY > 200) {
+      btnScrollToTopMobile.classList.remove('hidden');
+    } 
+    else {
+      btnScrollToTopMobile.classList.add('hidden');
+    }
+  });
+
+  function redirectOH() {   
+    var url =  `/contents/${this.options[this.selectedIndex].value}`   
+    console.log(url); 
+    window.open(url, '_parent');         
+  } 
+
+  var ohSelector = document.getElementById('ohSelector');
+  ohSelector.onchange = redirectOH;
+</script>
+        <div class="max-w-prose px-6 pb-6 md:px-12 md:pb-12">
+          <h1 class="max-w-xl text-3xl uppercase pt-6 pb-2 tracking-wide text-center mx-auto">Oral Histories on the Worlds Words Create</h1>
+<div class="wavy bg-coffee w-5/12 max-w-prose h-12 mx-auto"></div>
+<p class="my-6">
   Cataloging and classification sits at the heart of the library project, shaping how materials are described and organized and how they can be retrieved. The field has long understood that normative systems like Dewey Decimal and Library of Congress do this inadequately and worse, deploying language and categories that are rooted in white supremacy, patriarchy, and U.S. imperialism. Ways of Knowing presents unique and timely oral histories of alternative thesauri created in response to the inadequacies and biases embedded within widely adopted standards in libraries. The oral histories tell the stories behind the thesauri through the narratives of the people who created them, revealing aspects of thesauri work that ordinarily are overlooked or uncovered.
 </p>
 <p class="mb-6">
   The set of oral histories included in the volume document the Chicano Thesaurus, the Women’s Thesaurus, and the Homosaurus. The authors recorded hour-long oral histories with two representatives from each project, documenting the origins of each thesaurus, the political and social context from which they emerged, and the processes involved in their development and implementation. Introductory essays provide a context for each thesaurus in the history of information and activism in libraries. The book and accompanying digital files constitute the first primary source of its kind and a unique contribution to the history of metadata work in libraries. Capturing these stories through sound recording offers new ways of understanding the field of critical cataloging and classification as we hear the joy, frustration, urgency, and seriousness of critical metadata work.
 </p>
-<h2 class="max-w-xl opacity-80 text-xl uppercase py-4">About Us</h2>
+<h2 class="max-w-xl opacity-80 text-xl uppercase py-4 text-center mx-auto">About Us</h2>
 <p class="mb-6">
   <b>Amanda Belantara</b> is an audiovisual artist-anthropologist and librarian at New York University Libraries. She aspires to cultivate community and social change through creative exchange. Prior to joining NYU, Belantara worked as a creative producer and teaching artist, collaborating with cultural heritage institutions to create interactive audio installations, audio tours, and oral history projects. Her work often incorporates sound recording to uncover perspectives that are missing from written works. She brings this to her research in library and information science, using sound to explore, document and communicate the social construction of library practices. Her work has been supported by Arts Council England, The Paul Hamlyn Foundation, New York City Department of Cultural Affairs, The Lower Manhattan Cultural Council, Agency for Public Affairs, Government of Japan, The New York Metropolitan Library Council and New York University. Her work has been exhibited at places like The John Rylands Library, The Whitworth, Aomori Contemporary Art Centre, The New York Public Library for the Performing Arts, Akiyoshidai International Art Village, SFMoMA, Microscope Gallery, Castlefield Gallery and her documentary films have screened at festivals and galleries around the world. Belantara holds an MA in Visual Anthropology / Ethnographic Documentary from the University of Manchester, UK and an MSLIS from Pratt Institute, NYC.
 </p>
@@ -114,42 +191,6 @@
 
         </div>
       </main>
-   </div>
-    
-    <!-- <footer class="">
-
-</footer> -->
-    <!-- <div class="fixed left-0 bottom-0 w-dvw z-">
-      <div class="container w-full text-right mx-auto max-w-screen-xl my-10 px-6 z-0">
-        <button aria-label="scroll to top of window" id="scrollToTop" data-scroll="up" type="button" data-tip="Scroll to top" class="tooltip tooltip-bottom rounded-full bg-accent text-neutral z-50 cursor-pointer hidden opacity-40 hover:opacity-80 mx-6 xl:mx-0">
-          <svg height="3rem" width="3rem" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier" fill="currentColor">
-              <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333 c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333 z" fill="currentColor" ></path>
-              <path d="M271.085,176.915c-8.331-8.331-21.839-8.331-30.17,0L134.248,283.582c-8.331,8.331-8.331,21.839,0,30.17 c8.331,8.331,21.839,8.331,30.17,0L256,222.17l91.582,91.582c8.331,8.331,21.839,8.331,30.17,0c8.331-8.331,8.331-21.839,0-30.17 L271.085,176.915z" ></path> 
-            </g> 
-          </svg>
-        </button>
-      </div>
     </div>
-    <script>
-      var btnScrollToTop = document.querySelector("#scrollToTop");
-      btnScrollToTop.addEventListener("click", e => {
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: "smooth"
-        });
-      });
-      window.addEventListener('scroll', e => {
-        if (window.scrollY > 200) {
-          btnScrollToTop.classList.remove('hidden');
-        } 
-        else {
-          btnScrollToTop.classList.add('hidden');
-        }
-      });
-    </script> -->
   </body>
 </html>
