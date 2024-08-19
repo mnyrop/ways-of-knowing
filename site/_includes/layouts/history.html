@@ -39,7 +39,6 @@ fields:
       sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
       frameborder="0" title="{{ record.Title }}"></iframe>
 
-<!--  uses radio buttons -->
 <section class="flex flex-row flex-wrap">
   <input id="tab-one" type="radio" name="tabs" class="peer/tab-one opacity-0 absolute" checked />
   <label for="tab-one" class="font-semibold text-coyote bg-linen p-4 rounded-t-lg block cursor-pointer peer-checked/tab-one:text-[#474747] peer-checked/tab-one:bg-bone peer-checked/tab-one:border-transparent peer-checked/tab-one:cursor-default">
@@ -52,7 +51,7 @@ fields:
   </label>
 
   <div class="basis-full h-0"></div>
-  <div class="hidden bg-bone rounded-b-lg rounded-r-lg peer-checked/tab-one:block p-4 w-full">
+  <div class="hidden bg-bone rounded-b-lg rounded-r-lg peer-checked/tab-one:block p-4 w-full text-sm leading-loose">
     <dl>
       {% for field in fields %}
       {% if record[field].size > 0 %}
@@ -67,18 +66,8 @@ fields:
     </dl>
   </div>
 
-  <div class="hidden bg-bone rounded-b-lg rounded-r-lg peer-checked/tab-two:block p-4 w-full space-y-4">
-    <p>Ways of Knowing Oral History Collection [TEMPLATE / TO DO]</p>
-    <p><b>Interviewee:</b> Mary Ellen Capek, Editor, The Women's Thesaurus</p>
-    <p><b>Interviewers:</b> Amanda Belantara</p>
-    <p><b>Date:</b> July 26, 2022</p>
-    <p><b>Location: </b>Virtual Interview; Corrales, New Mexico</p>
-    <p><b>Amanda Belantara:</b> Today, we're interviewing Mary Ellen Capek, editor and coordinator of the "Women's Thesaurus" Task Force. The interview was conducted for the Ways of Knowing Oral History Project. The interview took place virtually on July 26th 2022, recorded locally by Hannah Crawford at Mary Ellen's home in Corrales, New Mexico. The interviewer is Amanda Belantara, based in New York City. So Mary Ellen, I'd like to start off today's interview by just learning a little bit more about your background and education?</p>
-    <p><b>Mary Ellen Capek:</b> Oh my! Well, I started out with a PhD in Contemporary Poetry, and my first teaching job, because there were very few at the time, the year I finished, was in Newark, New Jersey, right after the riots, and a community college, Essex County College, had just formed the year before. So I was in a position as a newly-minted PhD, teaching poetry to mostly Black and Hispanic adults, many of whom had a very low level of education because of Newark Public Schools. And by the end of that time, with my teaching in Newark, which was an amazing experience, I learned a lot more than they did, I realized how much language influenced so much of their lives, and by being able to get them more confident in their own language and finding their language... This was also the era of Black language first starting to get acknowledged, and Spanglish was another version that we dealt with. I learned a lot about the power of language in people's lives. And I had studied some linguistics as a graduate student and was very interested in all of that. I went from there to Princeton, running the Continuing Education Program, which was crazymaking, in the sense that I dealt with organizational issues that were way beyond anything I'd never experienced before. And that process very quickly led me, for sanity reasons, to working with a group called the American Council on Education's National Identification Program for the Advancement of Women in Higher Education Administration, which we abbreviated as a ACENIP, and that program was really important to the Thesaurus, because we got some funding through somebody I had met at the Ford Foundation, through that project, and also Prudential Foundation, which is one of the supporters eventually of the Thesaurus, became a supporter because they really liked what we were trying to do. And a lot of that work led to my being included, because of the grant funding from Ford, into the coalition that first created the National Council for Research on Women. So all of that was a very circumlocutious world, but it led to my being part of the Council. I saw that as an incredible opportunity for doing something really important and necessary, this was 1980 and 1981, that we needed to, basically, pool together the existing centers for research on women, which many had been funded by Ford Foundation, and it was really a needed coalition, because there were policy folks and activist groups, as well as the basic research centers like Rutgers, Stanford, Wellesley, several at Harvard and Radcliffe, and those centers were putting out amazing research and all kinds of important policy analyses.</p>
-    <p><b>Belantara:</b> You mentioned the Council, so I just wanna take a step back for a second, and could you tell us what the National Council for Research on Women was and how it was formed?</p>
-    <p><b>Capek:</b> It merged with an International Center for Research on Women, I guess, about four or five years ago, but it kept going for a good 35 years. And basically, it was a coalition, initially, of centers that had been funded by the Ford Foundation.</p>
-    <p><b>Belantara:</b> And when you say centers, could you elaborate? What type of centers?</p>
-    <p><b>Capek:</b> Research centers. The Wellesley Center for Research on Women, Stanford Center for Research on Women, policy centers in Washington, Business and Professional Women's Foundation. A lot of these centers then joined together and started to find curiosity in each other. A lot of my interest in this from the get-go was working to bridge research, policy and practice, because as you might expect, the research centers were used to talking to other researchers, the policy centers preferred policy and the activists didn't much like any of them, other than other activists. I remember one of our very early meetings, one of the policy people hurled a bunch of three-by-five index cards into the audience and said, "Until you girls learn to put your research on these cards, forget about it!" So there was a lot of antipathy among the various perspectives. But it was important, because the vision there was really to transform how the world thought about women and girls. I mean, it was not that we lacked ambition. And we did work, from the very beginning, with some international centers, but mostly, it was a national coalition initially. And it's wonderful that it's ended up with the international coalitions, but initially, there was just a lot of interest in bringing together these centers so they could learn from each other. A lot of new ideas were really fomenting then, thinking race, gender and class, for example, not studying in isolation, in silos, but really trying to bridge into wider understanding. We even got... At least my vision, and a few other people, had the notion of trying to connect up using technology. That was way before, obviously, we had the Internet and email common. I was at Princeton, so I had access to ARPAnet and some of the other more current technologies. We had a connection to the educational testing service in Princeton, which donated email addresses to all of our center directors back then. I think we had 29, to answer your earlier question, in the beginning.</p>
-    <p>...</p>
+  <div class="hidden bg-bone rounded-b-lg rounded-r-lg peer-checked/tab-two:block p-4 w-full space-y-2  text-sm leading-loose [&>p]:max-w-md">
+    {% assign transcript = "transcripts/" | append: record.ID | append: ".html" %}
+    {% include transcript %}
   </div>
 </section>
