@@ -9,7 +9,7 @@
     "test": "run-s test:*",
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --watch --postcss",
-    "build:11ty": "env NODE_ENV=production eleventy",
+    "build:11ty": "env NODE_ENV=production eleventy --pathprefix 'ways-of-knowing'",
     "build:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --postcss",
     "test:build": "npm run build:css && eleventy",
     "test:links": "hyperlink dist",
