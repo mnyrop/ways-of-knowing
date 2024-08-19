@@ -21,7 +21,7 @@
         </select>      
     </div>
     <div class="md:hidden">
-      <div id="scrollToTopMobile" class="btn btn-sm bg-coffee border-none hidden text-white  hover:bg-linen hover:text-coffee">⇧</div>
+      <div id="scrollToTopMobile" class="btn btn-sm bg-coffee border-none hidden text-white hover:bg-linen hover:text-coffee">⇧</div>
     </div>
     <div class="hidden md:inline">
       <div id="scrollToTopDesktop" class="btn btn-sm bg-coffee border-none hidden text-white hover:bg-linen hover:text-coffee cursor-pointer">Scroll to Top ⇧</div>
@@ -68,8 +68,8 @@
   });
 
   function redirectOH() {   
-    var url =  `/contents/${this.options[this.selectedIndex].value}`   
-    console.log(url); 
+    var baseurl = "{{ '/' | url }}";
+    var url = `${baseurl}contents/${this.options[this.selectedIndex].value}`;   
     window.open(url, '_parent');         
   } 
 
