@@ -42,12 +42,12 @@ fields:
 <!--  uses radio buttons -->
 <section class="flex flex-row flex-wrap">
   <input id="tab-one" type="radio" name="tabs" class="peer/tab-one opacity-0 absolute" checked />
-  <label for="tab-one" class="font-semibold text-[#474747] bg-[#f2ede6] p-4 rounded-t-lg block cursor-pointer peer-checked/tab-one:bg-bone peer-checked/tab-one:border-transparent peer-checked/tab-one:cursor-default">
+  <label for="tab-one" class="font-semibold text-coyote bg-linen p-4 rounded-t-lg block cursor-pointer peer-checked/tab-one:text-[#474747] peer-checked/tab-one:bg-bone peer-checked/tab-one:border-transparent peer-checked/tab-one:cursor-default">
     Metadata
   </label>
 
   <input id="tab-two" type="radio" name="tabs" class="peer/tab-two opacity-0 absolute" />
-  <label for="tab-two" class="font-semibold text-[#474747] bg-[#f2ede6] p-4 rounded-t-lg block cursor-pointer peer-checked/tab-two:bg-bone peer-checked/tab-two:border-transparent peer-checked/tab-two:cursor-default">
+  <label for="tab-two" class="font-semibold text-coyote bg-linen p-4 rounded-t-lg block cursor-pointer peer-checked/tab-two:text-[#474747] peer-checked/tab-two:bg-bone peer-checked/tab-two:border-transparent peer-checked/tab-two:cursor-default">
     Transcript
   </label>
 
@@ -56,13 +56,13 @@ fields:
     <dl>
       {% for field in fields %}
       {% if record[field].size > 0 %}
-      <dt class="font-semibold">{{ field }}</dt>
+      <dt class="font-bold">{{ field }}</dt>
       <dd class="mb-4">{{ record[field] }}</dd>
       {% endif %}
       {% endfor %}
-      <dt class="font-semibold">Short URL</dt>
+      <dt class="font-bold">Short URL</dt>
       <dd class="mb-4">
-        <a href="{{ record['Short URL'] }}" target="_blank" class="text-coffee hover:border-b-2 border-coffee">{{ record['Short URL'] }}</a>
+        <a href="{{ record['Short URL'] }}" target="_blank" class="text-coyote hover:border-b-2 border-coyote">{{ record['Short URL'] }}</a>
       </dd>
     </dl>
   </div>

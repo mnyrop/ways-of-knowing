@@ -7,8 +7,10 @@ module.exports = {
       },
       colors: {
         'matte-black': '#261E21',
-        'bone': '#EBDAC7',
-        'coffee': '#986E42'
+        'bone': '#F4EBE1',
+        'linen': '#F9F5F0',
+        'coffee': '#986E42',
+        'coyote': '#805D38'
       }
     }
   }, 
