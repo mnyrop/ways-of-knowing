@@ -15,7 +15,7 @@ module.exports = {
     }
   }, 
   plugins: [
-    // require('daisyui'),
+    require('daisyui'),
     require('@tailwindcss/typography'),
   ],
   content: ['./site/**/*.{html,liquid,md,js}']

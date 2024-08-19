@@ -26,3 +26,19 @@
   font-weight: 100;
   font-style: normal;
 }
+
+#caret {
+  transition: transform 0.15s ease-in-out;
+}
+
+
+.wavy {
+  background: rgb(152,110,66);
+  background: linear-gradient(90deg, rgba(152,110,66,1) 0%, rgba(244,235,225,1) 100%); 
+
+  --mask:
+    radial-gradient(13.66px at 50% calc(100% + 6px),#0000 calc(99% - 4px),#000 calc(101% - 4px) 99%,#0000 101%) calc(50% - 20px) calc(50% - 7px + .5px)/40px 14px repeat-x,
+    radial-gradient(13.66px at 50% -6px,#0000 calc(99% - 4px),#000 calc(101% - 4px) 99%,#0000 101%) 50% calc(50% + 7px)/40px 14px repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}

@@ -1,0 +1,78 @@
+<header class="bg-bone sticky mt-0 top-0 left-auto w-full md:px-0 py-4 z-10">
+  <div class="flex justify-between max-w-prose px-6 md:px-12">
+    <div>
+      {% if title == 'Home' %}
+      <span>Home</span>
+      {% else %}
+      <a href="{{ '/' | url }}" class="text-coyote font-semibold hover:border-coffee hover:border-b-2">Home</a> 
+      {% endif %}
+      <span class="px-2">/</span>
+        <select id="ohSelector" class="select text-coffee bg-white select-sm">
+          {% if record.ID %}
+            <option disabled selected>{{ record.Title | split: ' oral history interview, ' | first }}</option>
+          {% else %}
+            <option disabled selected>Select Oral History</option>
+          {% endif %}
+          {% for menuItem in records %}
+            {% unless menuItem.ID == record.ID %}
+            <option value="{{ menuItem.ID }}">{{ menuItem.Title | split: ' oral history interview, ' | first }}</option>
+            {% endunless %}
+          {% endfor %}
+        </select>      
+    </div>
+    <div class="md:hidden">
+      <div id="scrollToTopMobile" class="btn btn-sm bg-coffee border-none hidden text-white  hover:bg-linen hover:text-coffee">⇧</div>
+    </div>
+    <div class="hidden md:inline">
+      <div id="scrollToTopDesktop" class="btn btn-sm bg-coffee border-none hidden text-white hover:bg-linen hover:text-coffee cursor-pointer">Scroll to Top ⇧</div>
+    </div>
+  </div>
+</header>
+
+
+<script>
+  var btnScrollToTopDesktop = document.querySelector("#scrollToTopDesktop");
+  var btnScrollToTopMobile = document.querySelector("#scrollToTopMobile");
+  var main = document.querySelector("main");
+
+  btnScrollToTopDesktop.addEventListener("click", e => {
+    main.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  });
+  main.addEventListener('scroll', e => {
+    if (e.target.scrollTop > 200) {
+      btnScrollToTopDesktop.classList.remove('hidden');
+    } 
+    else {
+      btnScrollToTopDesktop.classList.add('hidden');
+    }
+  });
+
+  btnScrollToTopMobile.addEventListener("click", e => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  });
+  window.addEventListener('scroll', e => {
+    if (window.scrollY > 200) {
+      btnScrollToTopMobile.classList.remove('hidden');
+    } 
+    else {
+      btnScrollToTopMobile.classList.add('hidden');
+    }
+  });
+
+  function redirectOH() {   
+    var url =  `/contents/${this.options[this.selectedIndex].value}`   
+    console.log(url); 
+    window.open(url, '_parent');         
+  } 
+
+  var ohSelector = document.getElementById('ohSelector');
+  ohSelector.onchange = redirectOH;
+</script>

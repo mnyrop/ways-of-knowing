@@ -4,67 +4,15 @@ permalink: "{{ page.fileSlug | slugify }}/index.html"
 <!doctype html>
 <html lang="en">
   {% include "partials/head.html" %}
-  <body class="font-sans">
-    <div class="flex flex-row flex-wrap md:flex-nowrap h-screen w-screen">
-      <nav class="p-6 md:p-12 basis-full md:basis-1/3 bg-linen md:h-screen md:mx-auto md:text-center">
-        <a href="{{ '/' | url }}">
-          <img class="md:mx-auto w-48 md:w-56 mb-6" src="{{ '/assets/logo.png' | url }}"/>
-        </a>
-        <h2 class="py-6 text-xl uppercase">Contents</h2>
-        <ul class="md:hidden flex md:justify-center flex-wrap w-full">
-          {% for record in records %}
-          <li class="my-1 mr-4 md:mx-2">
-            <a href="#" class="text-coyote hover:border-b-2 hover:border-coffee">{{ record.Title | split: ' oral history interview, ' | first }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-        <ul class="hidden md:inline-block">
-          {% for record in records %}
-          <li class="py-1">
-            <a href="{{ '/contents' | url }}/{{ record.ID }}" class="text-coyote hover:border-b-2 hover:border-coffee">{{ record.Title | split: ' oral history interview, ' | first }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
-      <main class="p-6 md:p-12 basis-full md:basis-2/3 md:h-screen md:overflow-x-scroll bg-white">
-        <div class="max-w-prose">
+  <body class="font-sans bg-white">
+    <div class="flex flex-row flex-wrap md:flex-nowrap min-h-screen w-screen text-matte-black">
+      {% include "partials/nav.html" %}
+      <main class="basis-full md:basis-2/3 min-h-screen md:h-screen w-full md:overflow-y-scroll bg-white">
+        {% include "partials/header.html" %}
+        <div class="max-w-prose px-6 pb-6 md:px-12 md:pb-12">
           {{ content }}
         </div>
       </main>
-   </div>
-    
-    <!-- {% include "partials/footer.html" %} -->
-    <!-- <div class="fixed left-0 bottom-0 w-dvw z-">
-      <div class="container w-full text-right mx-auto max-w-screen-xl my-10 px-6 z-0">
-        <button aria-label="scroll to top of window" id="scrollToTop" data-scroll="up" type="button" data-tip="Scroll to top" class="tooltip tooltip-bottom rounded-full bg-accent text-neutral z-50 cursor-pointer hidden opacity-40 hover:opacity-80 mx-6 xl:mx-0">
-          <svg height="3rem" width="3rem" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier" fill="currentColor">
-              <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333 c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333 z" fill="currentColor" ></path>
-              <path d="M271.085,176.915c-8.331-8.331-21.839-8.331-30.17,0L134.248,283.582c-8.331,8.331-8.331,21.839,0,30.17 c8.331,8.331,21.839,8.331,30.17,0L256,222.17l91.582,91.582c8.331,8.331,21.839,8.331,30.17,0c8.331-8.331,8.331-21.839,0-30.17 L271.085,176.915z" ></path> 
-            </g> 
-          </svg>
-        </button>
-      </div>
     </div>
-    <script>
-      var btnScrollToTop = document.querySelector("#scrollToTop");
-      btnScrollToTop.addEventListener("click", e => {
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: "smooth"
-        });
-      });
-      window.addEventListener('scroll', e => {
-        if (window.scrollY > 200) {
-          btnScrollToTop.classList.remove('hidden');
-        } 
-        else {
-          btnScrollToTop.classList.add('hidden');
-        }
-      });
-    </script> -->
   </body>
 </html>
