@@ -26,29 +26,30 @@ fields:
   - Credits
   - Rights
 --- 
-<h1 class="max-w-xl text-3xl uppercase pt-6 pb-2 tracking-wide text-center mx-auto">{{ record.Title }}</h1>
+<h1 class="max-w-xl text-3xl uppercase md:pt-12 pt-6 pb-2 tracking-wide text-center mx-auto">{{ record.Title }}</h1>
 <div class="wavy bg-coffee w-5/12 max-w-prose h-12 mx-auto"></div>
 
-<iframe class="w-full z-0 h-72 mt-6 mb-12 rounded-md" id="kaltura_player"
-      src="https://cdnapisec.kaltura.com/p/1674401/sp/167440100/embedIframeJs/uiconf_id/23435151/partner_id/1674401?iframeembed=true&playerId=kaltura_player&entry_id={{ record['Kultura Entry ID'] }}&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[LeadWithHLSOnFlash]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_y7lxxlyu"
-      width="100%" height="350" allowfullscreen webkitallowfullscreen mozAllowFullScreen
-      allow="autoplay *; fullscreen *; encrypted-media *"
-      sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
-      frameborder="0" title="{{ record.Title }}"></iframe>
+<iframe class="w-full z-0 h-72 mt-6 mb-12 rounded-md drop-shadow-sm" id="kaltura_player"
+  src="https://cdnapisec.kaltura.com/p/1674401/sp/167440100/embedIframeJs/uiconf_id/23435151/partner_id/1674401?iframeembed=true&playerId=kaltura_player&entry_id={{ record['Kultura Entry ID'] }}&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[LeadWithHLSOnFlash]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_y7lxxlyu"
+  width="100%" height="350" allowfullscreen webkitallowfullscreen mozAllowFullScreen
+  allow="autoplay *; fullscreen *; encrypted-media *"
+  sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
+  frameborder="0" title="{{ record.Title }}"></iframe>
 
-<section class="flex flex-row flex-wrap">
+<fieldset class="flex flex-row flex-wrap">
+  <legend class="hidden">Content tabs</legend>
   <input id="tab-one" type="radio" name="tabs" class="peer/tab-one opacity-0 absolute" checked />
-  <label for="tab-one" class="font-semibold text-coyote bg-linen p-4 rounded-t-lg block cursor-pointer peer-checked/tab-one:text-[#474747] peer-checked/tab-one:bg-bone peer-checked/tab-one:border-transparent peer-checked/tab-one:cursor-default">
+  <label for="tab-one" class="font-semibold text-coyote bg-linen p-4 rounded-t-lg block cursor-pointer peer-checked/tab-one:text-matte-black peer-checked/tab-one:bg-bone peer-checked/tab-one:border-transparent peer-checked/tab-one:cursor-default">
     Metadata
   </label>
 
   <input id="tab-two" type="radio" name="tabs" class="peer/tab-two opacity-0 absolute" />
-  <label for="tab-two" class="font-semibold text-coyote bg-linen p-4 rounded-t-lg block cursor-pointer peer-checked/tab-two:text-[#474747] peer-checked/tab-two:bg-bone peer-checked/tab-two:border-transparent peer-checked/tab-two:cursor-default">
+  <label for="tab-two" class="font-semibold text-coyote bg-linen p-4 rounded-t-lg block cursor-pointer peer-checked/tab-two:text-matte-black peer-checked/tab-two:bg-bone peer-checked/tab-two:border-transparent peer-checked/tab-two:cursor-default">
     Transcript
   </label>
 
   <div class="basis-full h-0"></div>
-  <div class="hidden bg-bone rounded-b-lg rounded-r-lg peer-checked/tab-one:block p-4 w-full text-sm leading-loose">
+  <div class="hidden bg-bone rounded-b-lg rounded-r-lg peer-checked/tab-one:block p-4 w-full text-sm leading-loose drop-shadow-sm text-left">
     <dl>
       {% for field in fields %}
       {% if record[field].size > 0 %}
@@ -58,13 +59,13 @@ fields:
       {% endfor %}
       <dt class="font-bold">Short URL</dt>
       <dd class="mb-4 max-w-lg">
-        <a href="{{ record['Short URL'] }}" target="_blank" class="text-coyote hover:border-b-2 border-coyote">{{ record['Short URL'] }}</a>
+        <a href="{{ record['Short URL'] }}" target="_blank" class="text-coyote hover:border-b-2 border-coyote font-semibold">{{ record['Short URL'] }}</a>
       </dd>
     </dl>
   </div>
 
-  <div class="hidden bg-bone rounded-b-lg rounded-r-lg peer-checked/tab-two:block p-4 w-full space-y-4  text-xs leading-loose [&>p]:max-w-md font-mono italic">
+  <div class="hidden bg-bone rounded-b-lg rounded-r-lg peer-checked/tab-two:block p-4 w-full space-y-4  text-xs leading-loose [&>p]:max-w-md font-mono italic drop-shadow-sm text-left">
     {% assign transcript = "transcripts/" | append: record.ID | append: ".html" %}
     {% include transcript %}
   </div>
-</section>
+</fieldset>

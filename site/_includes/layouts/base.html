@@ -2,14 +2,14 @@
 permalink: "{{ page.fileSlug | slugify }}/index.html"
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" style="background-color: white;">
   {% include "partials/head.html" %}
   <body class="font-sans bg-white">
     <div class="flex flex-row flex-wrap md:flex-nowrap min-h-screen w-screen text-matte-black">
       {% include "partials/nav.html" %}
       <main class="basis-full md:basis-2/3 min-h-screen md:h-screen w-full md:overflow-y-scroll bg-white">
         {% include "partials/header.html" %}
-        <div class="max-w-prose px-6 pb-6 md:px-12 md:pb-12">
+        <div class="max-w-prose mx-auto text-center md:mx-0 md:text-left px-6 pb-6 md:px-12 md:pb-12">
           {{ content }}
         </div>
       </main>

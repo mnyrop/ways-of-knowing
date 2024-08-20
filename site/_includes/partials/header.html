@@ -1,4 +1,4 @@
-<header class="bg-bone sticky mt-0 top-0 left-auto w-full md:px-0 py-4 z-10">
+<header class="bg-bone sticky mt-0 top-0 left-auto w-full md:px-0 py-4 z-10 drop-shadow-lg">
   <div class="flex justify-between max-w-prose px-6 md:px-12">
     <div>
       {% if title == 'Home' %}
@@ -7,11 +7,12 @@
       <a href="{{ '/' | url }}" class="text-coyote font-semibold hover:border-coffee hover:border-b-2">Home</a> 
       {% endif %}
       <span class="px-2">/</span>
+        <label for="ohSelector" class="hidden">Select oral history</label>
         <select id="ohSelector" class="select text-coffee bg-white select-sm">
           {% if record.ID %}
             <option disabled selected>{{ record.Title | split: ' oral history interview, ' | first }}</option>
           {% else %}
-            <option disabled selected>Select Oral History</option>
+            <option disabled selected>Select oral history</option>
           {% endif %}
           {% for menuItem in records %}
             {% unless menuItem.ID == record.ID %}
