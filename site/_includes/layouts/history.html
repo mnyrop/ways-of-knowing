@@ -59,7 +59,9 @@ fields:
       {% endfor %}
       <dt class="font-bold">Short URL</dt>
       <dd class="mb-4 max-w-lg">
-        <a href="{{ record['Short URL'] }}" target="_blank" class="text-coyote hover:border-b-2 border-coyote font-semibold">{{ record['Short URL'] }}</a>
+        <a href="{{ record['Short URL'] }}" target="_blank" class="text-coyote hover:border-b-2 border-coyote font-semibold">
+          {{ record['Short URL'] | remove: 'https://' | split: '/' | first }}
+        </a>
       </dd>
     </dl>
   </div>
