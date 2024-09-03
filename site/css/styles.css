@@ -42,3 +42,21 @@
   -webkit-mask: var(--mask);
           mask: var(--mask);
 }
+
+.halftone {
+  filter: saturate(0) brightness(2) contrast(2.5) opacity(0.8);
+  -webkit-filter: saturate(0) brightness(2) contrast(2.5) opacity(0.8);
+}
+
+.halftone::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-size: 8px 7px, 8px 7px;
+  background-position: 0, 4px 1px;
+  background-image: radial-gradient(circle, #404040, rgba(255, 255, 255, 0) 60%), radial-gradient(circle, #404040, rgba(255, 255, 255, 0) 60%);
+  mix-blend-mode: multiply;
+}

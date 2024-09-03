@@ -6,8 +6,8 @@ permalink: "/index.html"
 home: true
 ---
 
-<h1 class="max-w-xl text-3xl uppercase md:pt-12 pt-6 pb-2 tracking-wide text-center mx-auto">Oral Histories on the Worlds Words Create</h1>
-<div class="wavy bg-coffee w-5/12 max-w-prose h-12 mx-auto"></div>
+<h1 class="max-w-xl text-3xl uppercase md:pt-12 pt-6 pb-2 tracking-wide text-center mx-auto md:text-left md:mx-0">Oral Histories on the Worlds Words Create</h1>
+<div class="wavy bg-coffee basis-full h-12 w-full"></div>
 
 <p class="my-6 text-left">
   Cataloging and classification sits at the heart of the library project, shaping how materials are described and organized and how they can be retrieved. The field has long understood that normative systems like Dewey Decimal and Library of Congress do this inadequately and worse, deploying language and categories that are rooted in white supremacy, patriarchy, and U.S. imperialism. Ways of Knowing presents unique and timely oral histories of alternative thesauri created in response to the inadequacies and biases embedded within widely adopted standards in libraries. The oral histories tell the stories behind the thesauri through the narratives of the people who created them, revealing aspects of thesauri work that ordinarily are overlooked or uncovered.
