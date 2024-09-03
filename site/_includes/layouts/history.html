@@ -6,7 +6,7 @@ fields:
   - Edition
   - Format
   - Dissertation
-  - Subject
+#  - Subject
   - MESH subjects
   - Contents
 #  - Genre
@@ -57,6 +57,15 @@ fields:
       <dd class="mb-4 max-w-lg">{{ record[field] }}</dd>
       {% endif %}
       {% endfor %}
+      <dt class="font-bold">Subject</dt>
+      <dd class="mb-4 max-w-lg pl-3">
+        {% assign subjects = record['Subject'] | split: ' ; ' %}
+        <ul class="list-disc">
+        {% for subject in subjects %}
+          <li class="leading-snug my-2">{{ subject }}</li>
+        {% endfor %}
+        </ul>
+      </dd>
       <dt class="font-bold">Short URL</dt>
       <dd class="mb-4 max-w-lg">
         <a href="{{ record['Short URL'] }}" target="_blank" class="text-coyote hover:border-b-2 border-coyote font-semibold">
