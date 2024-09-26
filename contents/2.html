@@ -29,166 +29,51 @@
     <div class="flex flex-row flex-wrap md:flex-nowrap min-h-screen w-screen text-matte-black">
       <nav class="px-6 pb-6 md:px-12 md:pb-12 basis-full md:basis-1/3 bg-linen md:min-h-screen mx-auto text-center">
   <a href="/ways-of-knowing/">
-    <img alt="Ways of Knowing project logo with tree, audio wave, and stars" class="mx-auto w-56 mb-6 mt-12 hover:opacity-80 hidden md:inline-block" src="/ways-of-knowing/assets/logo.png"/>
-    <img alt="Ways of Knowing project logo with tree and stars" class="mx-auto w-4/5 mt-6 sm:w-3/5 hover:opacity-80 md:hidden inline-block" src="/ways-of-knowing/assets/logo-shorty.png"/>
+    <img alt="Ways of Knowing project logo with tree, audio wave, and stars" class="mx-auto w-56 mb-6 mt-12 hidden md:inline-block" src="/ways-of-knowing/assets/logo.png"/>
+    <img alt="Ways of Knowing project logo with tree and stars" class="w-full mt-6 sm:w-3/5 md:hidden inline-block" src="/ways-of-knowing/assets/logo-shorty.png"/>
   </a>
-  <div class="hidden md:inline-block">
-    <h2 class="pt-6 pb-2 text-lg uppercase tracking-wide">Oral Histories</h2>
-    <div>
-      
-      <div class="px-1 py-2 inline-block whitespace-nowrap">
-        <a href="/ways-of-knowing/contents/1" class="text-coyote hover:border-b-2 hover:border-coffee font-semibold">Alissa Cherry</a>
-      </div>
-      <span>○</span>
-      
-      <div class="px-1 py-2 inline-block whitespace-nowrap">
-        <a href="/ways-of-knowing/contents/2" class="text-coyote hover:border-b-2 hover:border-coffee font-semibold">Mary Ellen S. Capek</a>
-      </div>
-      <span>○</span>
-      
-      <div class="px-1 py-2 inline-block whitespace-nowrap">
-        <a href="/ways-of-knowing/contents/3" class="text-coyote hover:border-b-2 hover:border-coffee font-semibold">Sarah M. Pritchard</a>
-      </div>
-      <span>○</span>
-      
-      <div class="px-1 py-2 inline-block whitespace-nowrap">
-        <a href="/ways-of-knowing/contents/4" class="text-coyote hover:border-b-2 hover:border-coffee font-semibold">Richard Chabrán</a>
-      </div>
-      <span>○</span>
-      
-      <div class="px-1 py-2 inline-block whitespace-nowrap">
-        <a href="/ways-of-knowing/contents/5" class="text-coyote hover:border-b-2 hover:border-coffee font-semibold">Lillian Castillo-Speed</a>
-      </div>
-      <span>○</span>
-      
-      <div class="px-1 py-2 inline-block whitespace-nowrap">
-        <a href="/ways-of-knowing/contents/6" class="text-coyote hover:border-b-2 hover:border-coffee font-semibold">Adrian Williams</a>
-      </div>
-      <span>○</span>
-      
-      <div class="px-1 py-2 inline-block whitespace-nowrap">
-        <a href="/ways-of-knowing/contents/7" class="text-coyote hover:border-b-2 hover:border-coffee font-semibold">K. J. Rawson</a>
-      </div>
-      
-      
-    </ul>
+  <!-- desktop -->
+  <div class="hidden md:inline text-center"> 
+    <p class="py-2"><a href="/ways-of-knowing/" class="font-semibold text-coyote text-lg tracking-wide border-b-2 border-transparent hover:border-coyote">Home</a></p>
+    <p class="py-2"><a href="/ways-of-knowing/thesauri" class="font-semibold text-coyote text-lg tracking-wide border-b-2 border-transparent hover:border-coyote">Thesaurus Projects</a></p>
+    <p class="py-2"><a href="/ways-of-knowing/all" class="font-semibold text-coyote text-lg tracking-wide border-b-2 border-transparent hover:border-coyote">Browse Oral Histories</a></p>
+    <p class="font-semibold mt-8">Preferred Citation</p>
+    <p class="text-sm mt-1">The Ways of Knowing Oral History Collection. waysofknowing.org</p>
+  </div>
+  <!-- mobile -->
+  <div class="sticky mt-0 top-0 w-full">
+    <div class="flex sm:justify-center justify-between md:hidden mt-4 gap-4"> 
+      <a href="/ways-of-knowing/" class="font-semibold text-coyote tracking-wide border-b-2 border-transparent hover:border-coyote">Home</a>
+      <a href="/ways-of-knowing/thesauri" class="font-semibold text-coyote tracking-wide border-b-2 border-transparent hover:border-coyote">Thesaurus Projects</a>
+      <a href="/ways-of-knowing/all" class="font-semibold text-coyote tracking-wide border-b-2 border-transparent hover:border-coyote">Oral Histories</a>
+    </div>
   </div>
 </nav>
       <main class="basis-full md:basis-2/3 min-h-screen md:h-screen w-full md:overflow-y-scroll bg-white">
-        <header class="bg-bone sticky mt-0 top-0 left-auto w-full md:px-0 py-4 z-10 drop-shadow-lg">
-  <div class="flex justify-between max-w-prose px-6 md:px-12">
-    <div>
-      
-      <a href="/ways-of-knowing/" class="text-coyote font-semibold hover:border-coffee hover:border-b-2">Home</a> 
-      
-      <span class="px-2">/</span>
-        <label for="ohSelector" class="hidden">Select oral history</label>
-        <select id="ohSelector" class="select text-coffee bg-white select-sm">
+        <div class="max-w-prose mx-auto text-center md:text-left my-12 px-6 md:px-12">
+          <nav class="mb-8 md:mb-0">
           
-            <option disabled selected>Mary Ellen S. Capek</option>
+            <a href="/ways-of-knowing/" class="hover:no-underline underline">Home</a> 
+            <span class="px-1 opacity-60">»</span>
           
           
+            <a href="/ways-of-knowing/thesauri" class="hover:no-underline underline">Thesaurus Projects</a> 
+            <span class="px-1 opacity-60">»</span>
             
-            <option value="1">Alissa Cherry</option>
-            
+            <a href="/ways-of-knowing/thesauri/women" class="hover:no-underline underline">The Women’s Thesaurus</a> 
+            <span class="px-1 opacity-60">»</span>
           
-            
-          
-            
-            <option value="3">Sarah M. Pritchard</option>
-            
-          
-            
-            <option value="4">Richard Chabrán</option>
-            
-          
-            
-            <option value="5">Lillian Castillo-Speed</option>
-            
-          
-            
-            <option value="6">Adrian Williams</option>
-            
-          
-            
-            <option value="7">K. J. Rawson</option>
-            
-          
-        </select>      
-    </div>
-    <div class="md:hidden">
-      <div id="scrollToTopMobile" class="btn btn-sm bg-coffee border-none hidden text-white hover:bg-linen hover:text-coffee">⇧</div>
-    </div>
-    <div class="hidden md:inline">
-      <div id="scrollToTopDesktop" class="btn btn-sm bg-coffee border-none hidden text-white hover:bg-linen hover:text-coffee cursor-pointer">Scroll to Top ⇧</div>
-    </div>
-  </div>
-</header>
-
-
-<script>
-  var btnScrollToTopDesktop = document.querySelector("#scrollToTopDesktop");
-  var btnScrollToTopMobile = document.querySelector("#scrollToTopMobile");
-  var main = document.querySelector("main");
-
-  btnScrollToTopDesktop.addEventListener("click", e => {
-    main.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth"
-    });
-  });
-  main.addEventListener('scroll', e => {
-    if (e.target.scrollTop > 200) {
-      btnScrollToTopDesktop.classList.remove('hidden');
-    } 
-    else {
-      btnScrollToTopDesktop.classList.add('hidden');
-    }
-  });
-
-  btnScrollToTopMobile.addEventListener("click", e => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth"
-    });
-  });
-  window.addEventListener('scroll', e => {
-    if (window.scrollY > 200) {
-      btnScrollToTopMobile.classList.remove('hidden');
-    } 
-    else {
-      btnScrollToTopMobile.classList.add('hidden');
-    }
-  });
-
-  function redirectOH() {   
-    var baseurl = "/ways-of-knowing/";
-    var url = `${baseurl}contents/${this.options[this.selectedIndex].value}`;   
-    window.open(url, '_parent');         
-  } 
-
-  var ohSelector = document.getElementById('ohSelector');
-  ohSelector.onchange = redirectOH;
-</script>
-        <div class="max-w-prose mx-auto text-center md:mx-0 md:text-left px-6 pb-6 md:px-12 md:pb-12">
+          </nav>
            
-<div class="flex items-start justify-between gap-2 md:gap-4 flex-wrap-reverse md:flex-nowrap">
-  <!-- <div class="flex-none text-center mx-auto md:text-left md:mx-0">
-    <img class="md:mt-10 mt-6 object-cover h-36 w-36 md:h-28 md:w-28 rounded-full inline bg-bone" alt="portrait of Mary Ellen S. Capek" src="/ways-of-knowing/assets/images/headshots/2.jpg"/>
-  </div> -->
 
+<div class="flex items-start justify-between gap-2 md:gap-4 flex-wrap-reverse md:flex-nowrap">
   <div class="flex-grow">
-    <h1 class="max-w-xl text-3xl uppercase md:pt-12 pt-6 pb-2 tracking-wide text-center mx-auto md:text-left md:mx-0">Mary Ellen S. Capek oral history interview, 2022.</h1>
-    <div class="wavy bg-coffee basis-full h-12 w-full"></div>
+    <h1 class="max-w-xl text-3xl uppercase md:pt-12 pt-6 pb-2 tracking-wide">Mary Ellen S. Capek oral history interview, 2022.</h1>
+    <div class="wavy bg-coffee basis-full h-12 w-3/4 mx-auto md:mx-0 mb-8"></div>
   </div>
-  
 </div>
 
-
-
-<iframe class="w-full z-0 h-72 mt-6 mb-12 rounded-md drop-shadow-sm bg-black" id="kaltura_player"
+<iframe class="w-full z-0 h-72 mb-12 rounded-md drop-shadow-sm bg-black" id="kaltura_player"
   src="https://cdnapisec.kaltura.com/p/1674401/sp/167440100/embedIframeJs/uiconf_id/23435151/partner_id/1674401?iframeembed=true&playerId=kaltura_player&entry_id=1_3zvw9pcy&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[LeadWithHLSOnFlash]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_y7lxxlyu"
   width="100%" height="350" allowfullscreen webkitallowfullscreen mozAllowFullScreen
   allow="autoplay *; fullscreen *; encrypted-media *"
@@ -220,7 +105,7 @@
     
     <p class="py-2"><b>Mary Ellen Capek</b> is an organizational researcher and consultant, currently principal of Capek Consulting (<a href="https://capekconsulting.com/" target="_blank" class="text-coffee">capekconsulting.com</a>). She is co-author of <i>Effective Philanthropy: Organizational Success through Deep Diversity and Gender Equality</i> (The MIT Press, 2006)—launched and funded by the W.K. Kellogg Foundation—which won the 2007 Independent Sector/ARNOVA Virginia A. Hodgkinson Research Prize for the best book on philanthropy in the nonprofit sector that informs policy and practice.</p>
 
-<p class="py-2">A founding officer of the National Council for Research on Women, a 35-year-old coalition of 120 research and policy centers that merged in 2016 with the International Center for Research on Women, Mary Ellen served as NCRW executive director from 1989-1996 and edited <i>A Women’s Thesaurus</i>, named to <i>Library Journal’s</i> Best Reference Books 1987 list. From 1975-1983 she served as Associate Director then Director of Continuing Education at Princeton University. And from 1969-1974 she was a teacher (tenured in 1972) at Essex County College in Newark, NJ. She wrote a well-received textbook, *Writing in Context* (Harcourt Brace Jovanovich, 1976) based on her teaching in Newark.</p>
+<p class="py-2">A founding officer of the National Council for Research on Women, a 35-year-old coalition of 120 research and policy centers that merged in 2016 with the International Center for Research on Women, Mary Ellen served as NCRW executive director from 1989-1996 and edited <i>A Women’s Thesaurus</i>, named to <i>Library Journal’s</i> Best Reference Books 1987 list. From 1975-1983 she served as Associate Director then Director of Continuing Education at Princeton University. And from 1969-1974 she was a teacher (tenured in 1972) at Essex County College in Newark, NJ. She wrote a well-received textbook, <i>Writing in Context</i> (Harcourt Brace Jovanovich, 1976) based on her teaching in Newark.</p>
 
 <p class="py-2">She has served on numerous boards and committees, including the Aspen Institute’s Nonprofit Sector Research Fund, the Independent Sector Research Committee, The Conference Board Work/Life Leadership Council, Funders for Lesbian and Gay Issues, and Equality New Mexico.</p> 
 
@@ -440,8 +325,15 @@
 <p><b>Capek:</b> I just think that it's such an important way of framing stuff, and I'm so grateful you're doing this Ways of Knowing, because it's so important to make that much more public, because people don't really get that there are different ways of knowing, and the more we learn how to understand other people's frameworks, the kinder we are, the more we learn how to engage with them differently, but also, because there are so many groups that have been excluded by the use of language. I mean, that's really what I'm trying to write about now, that so many people have used language as a bludgeon to really get rid of so many others that they don't fit in the mainstream. It's not easy, because a lot of times, you name stuff and people go, "Uh-oh, we weren't supposed to talk about that. That's a taboo." But you know if it makes people nervous, that's exactly what you're supposed to talk about, especially if it's within an organization. So that's what I'm playing around with now. But the bottom line with all of this is that I'm very proud of this project and I really am hugely grateful I got to do it.</p>
   </div>
 </fieldset>
+          <br>
+          <br>
+          <br>
         </div>
       </main>
+      <footer class="md:hidden bg-bone w-full mx-auto text-center">
+        <p class="font-semibold mt-6 mb-1">Preferred Citation</p>
+        <p class="text-sm mb-12">The Ways of Knowing Oral History Collection. waysofknowing.org</p>
+      </footer>
     </div>
   </body>
 </html>
