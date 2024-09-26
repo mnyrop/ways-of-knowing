@@ -2753,6 +2753,10 @@ input.tab:checked + .tab-content,
   width: 8rem !important;
 }
 
+.w-48{
+  width: 12rem !important;
+}
+
 .w-56{
   width: 14rem !important;
 }
@@ -2801,10 +2805,6 @@ input.tab:checked + .tab-content,
   cursor: pointer !important;
 }
 
-.list-inside{
-  list-style-position: inside !important;
-}
-
 .list-disc{
   list-style-type: disc !important;
 }
@@ -2849,10 +2849,6 @@ input.tab:checked + .tab-content,
   --tw-space-y-reverse: 0 !important;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse))) !important;
   margin-bottom: calc(1rem * var(--tw-space-y-reverse)) !important;
-}
-
-.text-pretty{
-  text-wrap: pretty !important;
 }
 
 .rounded-3xl{
@@ -3152,11 +3148,6 @@ input.tab:checked + .tab-content,
 
 .hover\:border-b-2:hover{
   border-bottom-width: 2px !important;
-}
-
-.hover\:border-coffee:hover{
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(152 110 66 / var(--tw-border-opacity)) !important;
 }
 
 .hover\:border-coyote:hover{
