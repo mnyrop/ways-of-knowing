@@ -4,6 +4,7 @@ const markdownIt        = require("markdown-it")
 const markdownItAnchor  = require("markdown-it-anchor")
 const slugify           = require("slugify")
 
+
 moment.locale('en')
 
 module.exports = function(eleventyConfig) {
@@ -31,10 +32,11 @@ module.exports = function(eleventyConfig) {
     return arr.slice(0, limit);
   })
 
-  // inspect objects as JSON
-  eleventyConfig.addFilter('jsonify', (data) => {
-    return JSON.stringify(data, null, "\t")
-  })  
+  // find 
+  eleventyConfig.addFilter("find", function find(collection = [], field = "", value = "") {
+    let item = collection.find(item => item.data[field] === value)
+    return(item)
+  });
 
   // where hash array includes substring
   eleventyConfig.addFilter("where_includes", function(arr, key, value) {
@@ -76,6 +78,7 @@ module.exports = function(eleventyConfig) {
   // layout aliases 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.html')
   eleventyConfig.addLayoutAlias('history', 'layouts/history.html')
+  eleventyConfig.addLayoutAlias('thesaurus', 'layouts/thesaurus.html')
 
   // passthrough copy
   eleventyConfig.addPassthroughCopy('site/assets/')
