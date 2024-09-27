@@ -8,21 +8,19 @@ permalink: "{{ page.fileSlug | slugify }}/index.html"
     <div class="flex flex-row flex-wrap md:flex-nowrap min-h-screen w-screen text-matte-black">
       {% include "partials/nav.html" %}
       <main class="basis-full md:basis-2/3 min-h-screen md:h-screen w-full md:overflow-y-scroll bg-white">
-        <div class="max-w-prose mx-auto text-center md:text-left my-12 px-6 md:px-12">
+        <div class="max-w-prose mx-auto text-center md:text-left md:mx-0 my-12 px-6 md:px-12">
           <nav class="mb-8 md:mb-0">
-          {% unless title == 'Home' %}
             <a href="{{ '/' | url }}" class="hover:no-underline underline">Home</a> 
-            <span class="px-1 opacity-60">»</span>
-          {% endunless %}
+            <span class="px-1 opacity-75">»</span>
           {% if tID %}
             <a href="{{ '/thesauri' | url }}" class="hover:no-underline underline">Thesaurus Projects</a> 
-            <span class="px-1 opacity-60">»</span>
+            <span class="px-1 opacity-75">»</span>
           {% elsif record.ID %}
             <a href="{{ '/thesauri' | url }}" class="hover:no-underline underline">Thesaurus Projects</a> 
-            <span class="px-1 opacity-60">»</span>
+            <span class="px-1 opacity-75">»</span>
             {% assign t = collections['thesauri'] | find: 'tID', record["Thesaurus Project"] %}
             <a href="{{ '/' | url }}thesauri/{{ t.data.tID }}" class="hover:no-underline underline">{{ t.data.title }}</a> 
-            <span class="px-1 opacity-60">»</span>
+            <span class="px-1 opacity-75">»</span>
           {% endif %}
           </nav>
           {{ content }}

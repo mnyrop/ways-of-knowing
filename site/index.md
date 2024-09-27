@@ -20,14 +20,3 @@ home: true
 <p class="my-6">
   Embracing alternative thesauri and the worlds they reflect and produce offers a different way forward than eliminating or attempting to correct normative systems. Rather than pursuing solutions that are bureaucratic, partial, and subject to government policies and confirmation, these efforts create something new that emerges from and belongs to the community itself. The projects documented here are revolutionary and joyful. Their creators do not wait for approval, and they do not answer to the Library of Congress. They do not ask for accommodation or inclusion. They document their own worlds, in their own words, with and for each other. 
 </p>
-
-<h2 class="max-w-xl text-2xl uppercase md:pt-8 pt-4 pb-2 tracking-wide mx-auto md:mx-0">Bios</h2>
-
-<p class="my-6">
-  <b>Amanda Belantara</b> is a librarian at New York University Libraries. She aspires to cultivate community and social change through creative exchange. Belantara holds an MA in Visual Anthropology / Ethnographic Documentary from the University of Manchester, UK and an MSLIS from Pratt Institute, NYC.
-</p>
-
-<p class="my-6">
-  <b>Emily Drabinski</b> is Associate Professor at the Queens College Graduate School of Library and Information Studies. She publishes and presents widely on topics related to knowledge organization, information literacy, and critical perspectives in librarianship. Drabinski edits Gender and Sexuality in Information Studies, a book series from Library Juice Press/Litwin Books. She is a contributing writer at Truthout. She is immediate past-president of the American Library Association.
-</p>
-
