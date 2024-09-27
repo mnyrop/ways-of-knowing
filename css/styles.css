@@ -2961,10 +2961,6 @@ input.tab:checked + .tab-content,
   padding-top: 3rem !important;
 }
 
-.pt-4{
-  padding-top: 1rem !important;
-}
-
 .pt-6{
   padding-top: 1.5rem !important;
 }
@@ -3068,6 +3064,10 @@ input.tab:checked + .tab-content,
 
 .opacity-60{
   opacity: 0.6 !important;
+}
+
+.opacity-75{
+  opacity: 0.75 !important;
 }
 
 .drop-shadow-lg{
@@ -3342,10 +3342,6 @@ input.tab:checked + .tab-content,
 
   .md\:pt-12{
     padding-top: 3rem !important;
-  }
-
-  .md\:pt-8{
-    padding-top: 2rem !important;
   }
 
   .md\:text-left{
