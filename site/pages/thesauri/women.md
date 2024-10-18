@@ -2,7 +2,7 @@
 tID: women
 title: The Women’s Thesaurus
 layout: thesaurus
-image: '/assets/images/thesauri/women.jpg'
+image: '/assets/images/thesauri/women.png'
 ---
 
 The Women’s Thesaurus was created to provide useful and relevant search terms for the study
