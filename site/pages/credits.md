@@ -39,7 +39,7 @@ home: true
 <h2 class="max-w-xl text-2xl uppercase pb-2 tracking-wide mx-auto md:mx-0 pt-6">Acknowledgements</h2>
 
 <p class="my-6">
-  This project, like those it documents, would not be possible without the collaboration and cooperation of many. First and foremost, we give our heartfelt thanks to each project contributor: Richard Chabrán, Lillian Castillo-Speed, K.J. Rawson, Adrian Williams, Mary Ellen Capek, and Sarah Pritchard. We are continuously inspired by your work, your stories, and your voices.
+  This project, like those it documents, would not be possible without the collaboration and cooperation of many. First and foremost, we give our heartfelt thanks to each project contributor: Richard Chabrán, Lillian Castillo-Speed, K.J. Rawson, Adrian Williams, Mary Ellen Capek, Sarah Pritchard, and Alissa Cherry. We are continuously inspired by your work, your stories, and your voices.
 </p>
 
 <p class="my-6">
